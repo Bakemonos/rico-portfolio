@@ -1,28 +1,30 @@
 import { NavLink } from 'react-router-dom';
+import styles from './Styles/navBar.module.css';
+
 
 export default function NavBar() {
     const menu = [
         { id: 0, name: 'Home', path: '/' },
-        { id: 1, name: 'Services', path: '/services' },
-        { id: 2, name: 'About', path: '/about' },
-        { id: 3, name: 'Skills', path: '/skills' },
-        { id: 4, name: 'Portfolio', path: '/portfolio' },
-        { id: 5, name: 'Contact', path: '/contact' },
+        { id: 1, name: 'About', path: '/about' },
+        { id: 2, name: 'Projects', path: '/projects' },
+        { id: 3, name: 'Contact', path: '/contact' },
     ];
 
     return (
-        <div className="Header">
+        <div className={`${styles.Header}`}>
+
             <section>
                 <h1>rIco</h1>
             </section>
-            <section>
-                <nav className="Nav">
+
+            <section className={`${styles.Section1}`}>
+                <nav className={`${styles.Nav}`}>
                     <ul>
                         {menu.map((item) => (
-                            <li key={item.id}>
+                            <li className={`${styles.List}`} key={item.id}>
                                 <NavLink
                                     to={item.path}
-                                    className={({ isActive }) => isActive ? 'active' : ''}
+                                    className={({ isActive }) => isActive ? `${styles.active}` : ''}
                                 >
                                     {item.name}
                                 </NavLink>
@@ -30,6 +32,7 @@ export default function NavBar() {
                         ))}
                     </ul>
                 </nav>
+            <button className={`${styles.Button}`}> Let's talk</button>
             </section>
         </div>
     );

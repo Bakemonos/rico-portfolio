@@ -1,9 +1,11 @@
+import styles from './Styles/hero.module.css';
 
 export default function Hero(){
+
     return(
         <>
-            <div className="Hero">
-                <section className="welc">
+            <div className={`${styles.hero}`}>
+                <section className="Welcome">
                     <h1>Hello, I'm a Front end Developer</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and 

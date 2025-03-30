@@ -1,0 +1,72 @@
+.Section1{
+    display: flex;
+    gap: 150px;
+}
+
+@keyframes smoothHover {
+    from { opacity: 1; }
+    to { opacity: 0.8; }
+  }
+
+.Button{
+    animation: none;
+    border-radius: 4px;
+    padding: 0 20px;
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    border: 1px solid var(--border-primary);
+}
+
+.Button:hover{
+    background-color: var(--background-primary);
+    border: 1px solid transparent;
+    color: var(--text-white);
+    animation: smoothHover 0.3s ease forwards;
+}
+
+/* .List a.active {
+    color: #4dabf7; 
+} */
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    padding: 20px 200px;
+    color: var(--text-white);
+}
+
+.Nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.List {
+    list-style-type: none;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.List a {
+    color: var(--text-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+    position: relative;
+    padding: 0 5px 10px 5px;
+}
+
+
+.List a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-light); 
+    border-radius: 8px;
+}
