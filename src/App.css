@@ -7,43 +7,4 @@ body{
     background-color: var(--primary);
 }
 
-:root {
-    /*pallet*/
-    --primary: #191919;
-    --secondary: #222831;
-    --primary-dark: #191919;
-    --primary-light: #F6F6F6;
 
-    --background-primary: #191919;
-    --background-secondary: #222831;
-    --background-dark-light: #31363F;
-    
-    /*text*/
-    --text-white: #F6F6F6;
-    --text-secondary: #ECECEC;
-
-    /*border*/
-    --border-primary: #F6F6F6;
-    --border-secondary: #939393;
-    
-
-    /*simple*/
-    --white: #ffffff;
-    --black: #000000;
-    --gray: #6c757d;
-
-    /*more*/
-    --success: #28a745;
-    --error: #dc3545;
-    --warning: #ffc107;
-
-
-    /*optiom*/
-    --bg-light: #f8f9fa;
-    --bg-dark: #191919;
-}
-
-.Welcome {
-    padding-top: 200px;
-    width: 800px;
-}

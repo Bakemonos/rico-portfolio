@@ -1,3 +1,43 @@
+
+:root {
+    /*pallet*/
+    --primary: #191919;
+    --secondary: #222831;
+    --primary-dark: #191919;
+    --primary-light: #F6F6F6;
+
+    --background-primary: #191919;
+    --background-secondary: #222831;
+    --background-dark-light: #31363F;
+    
+    /*text*/
+    --text-white: #F6F6F6;
+    --text-secondary: #ECECEC;
+
+    /*border*/
+    --border-primary: #F6F6F6;
+    --border-secondary: #939393;
+    
+    /*simple*/
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #6c757d;
+
+    /*more*/
+    --success: #28a745;
+    --error: #dc3545;
+    --warning: #ffc107;
+
+    /*optiom*/
+    --bg-light: #f8f9fa;
+    --bg-dark: #191919;
+}
+
+.Welcome {
+    padding-top: 200px;
+    width: 800px;
+}
+
 .Section1{
     display: flex;
     gap: 150px;
@@ -24,10 +64,6 @@
     color: var(--text-white);
     animation: smoothHover 0.3s ease forwards;
 }
-
-/* .List a.active {
-    color: #4dabf7; 
-} */
 
 .Header {
     display: flex;
@@ -70,3 +106,28 @@
     background-color: var(--primary-light); 
     border-radius: 8px;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+
+
+
+/**                 ICONS STYLE                 **/
+
+.icon {
+    width: 24px;
+    height: 24px;
+    max-width: 48px;
+    fill: currentColor;
+  }
+  
+.icon.github, .icon.linkedin{
+    fill: var(--white);
+}
+  

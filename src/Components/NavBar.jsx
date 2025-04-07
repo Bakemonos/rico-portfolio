@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import styles from './Styles/navBar.module.css';
-
+import MySvgIcon from './MySvgIcon';
 
 export default function NavBar() {
     const menu = [
@@ -11,28 +10,29 @@ export default function NavBar() {
     ];
 
     return (
-        <div className={`${styles.Header}`}>
+        <div className='Header'>
 
             <section>
                 <h1>rIco</h1>
             </section>
 
-            <section className={`${styles.Section1}`}>
-                <nav className={`${styles.Nav}`}>
+            <section className='Section1'>
+                <nav className='Nav'>
                     <ul>
                         {menu.map((item) => (
-                            <li className={`${styles.List}`} key={item.id}>
+                            <li className='List' key={item.id}>
                                 <NavLink
                                     to={item.path}
-                                    className={({ isActive }) => isActive ? `${styles.active}` : ''}
-                                >
-                                    {item.name}
-                                </NavLink>
+                                    className={({ isActive }) => isActive ? 'active' : ''}
+                                > {item.name} </NavLink>
                             </li>
                         ))}
                     </ul>
                 </nav>
-            <button className={`${styles.Button}`}> Let's talk</button>
+            </section>
+            <section>
+                <MySvgIcon name="github" className="github" /> 
+                <MySvgIcon name="linkedin" className="linkedin" />
             </section>
         </div>
     );

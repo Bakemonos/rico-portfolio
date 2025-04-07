@@ -1,10 +1,9 @@
-import styles from './Styles/hero.module.css';
 
 export default function Hero(){
 
     return(
         <>
-            <div className={`${styles.hero}`}>
+            <div className='hero'>
                 <section className="Welcome">
                     <h1>Hello, I'm a Front end Developer</h1>
                     <p>
